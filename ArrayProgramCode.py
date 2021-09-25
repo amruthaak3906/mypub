@@ -15,12 +15,12 @@ for i in range(0,n):
     print(arr[i],"\n",end='')
 
 item=input("\nEnter the number to be inserted into the array:\n")
-def linearsearch(arr, item):
+def arr_search(arr, item):
    for i in range(len(arr)):
       if arr[i] == item:
          return i
    return -1
-a=linearsearch(arr,item)
+a=arr_search(arr,item)
 if(a==-1):
    print("Element not found")
    arr.append(item);
